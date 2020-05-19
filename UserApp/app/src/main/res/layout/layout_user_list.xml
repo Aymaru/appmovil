@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="8"
+            android:text="Nombre"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="8"
+            android:text="88888888"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textViewCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="8"
+            android:text="Country"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="8"
+            android:text="18"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textViewUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewDelete"
+                android:layout_toLeftOf="@+id/textViewDelete"
+                android:layout_toStartOf="@+id/textViewDelete"
+                android:padding="5dp"
+                android:text="Update"
+                android:textColor="#498C1A" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textViewDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:text="Delete"
+                android:textColor="#C20A10" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
